@@ -1,13 +1,14 @@
-public class Field {
+public class Court {
     private int nr;
 
 
-    public Field(nr){
+    public Court(int nr){
+        this.nr = nr;
     }
 
     @Override
     public String toString() {
-        return "Field{" +
+        return "Court{" +
                 "nr=" + nr +
                 '}';
     }

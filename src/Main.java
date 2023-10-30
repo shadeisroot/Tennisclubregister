@@ -4,6 +4,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         Adressregister adressregister = new Adressregister();
+        Courts courts = new Courts();
+        Reservation reservation = new Reservation();
+
 
         boolean exit = false;
         while(!exit){
@@ -53,6 +56,15 @@ public class Main {
                     break;
                 case 5:
                     exit = true;
+                    break;
+                case 6:
+                    courts.showall();
+                    break;
+                case 7:
+                    System.out.println("Enter number you want to reserve");
+                    courts.showall();
+                    int numb = scan.nextInt();
+                    reservation.reserve(numb, courts);
                     break;
             }
         }
